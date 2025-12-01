@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Dams & Sires | McBride Family Poodles</title>
+  <meta name="description" content="Meet the health-tested, champion-lined Standard Poodle dams and sires behind our exceptional puppies in Phoenix, Arizona.">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom colors (exactly matching your site) -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            burgundy: '#6B1C2D',
+            deepblack: '#0F0F0F',
+            luxurygold: '#D4AF87'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-deepblack text-white font-sans min-h-screen flex flex-col">
+
+  <!-- Navigation – identical to all pages -->
+  <nav class="bg-deepblack/90 backdrop-blur sticky top-0 z-50 border-b border-burgundy/20">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">McBride Family Poodles</h1>
+      <div class="space-x-8 hidden md:block">
+        <a href="index.html" class="hover:text-burgundy transition">Home</a>
+        <a href="puppies.html" class="hover:text-burgundy transition">Puppies</a>
+        <a href="parents.html" class="text-burgundy font-bold transition">Our Dogs</a>
+        <a href="about.html" class="hover:text-burgundy transition">About</a>
+        <a href="blog.html" class="hover:text-burgundy transition">Blog</a>
+        <a href="contact.html" class="hover:text-burgundy transition">Contact</a>
+      </div>
+      <button id="menu-btn" class="md:hidden text-3xl">Menu</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-deepblack/95 border-t border-burgundy/30">
+      <div class="container mx-auto px-6 py-4 space-y-4 text-center">
+        <a href="index.html" class="block hover:text-burgundy">Home</a>
+        <a href="puppies.html" class="block hover:text-burgundy">Puppies</a>
+        <a href="parents.html" class="block text-burgundy font-bold">Our Dogs</a>
+        <a href="about.html" class="block hover:text-burgundy">About</a>
+        <a href="blog.html" class="block hover:text-burgundy">Blog</a>
+        <a href="contact.html" class="block hover:text-burgundy">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero -->
+  <section class="bg-burgundy py-16 text-center">
+    <h1 class="text-4xl md:text-6xl font-bold">Our Dams & Sires</h1>
+    <p class="text-xl mt-4">The heart of McBride Family Poodles • Phoenix, AZ</p>
+  </section>
+
+  <!-- Parents Grid -->
+  <section class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
+
+      <!-- ==================== FROGGIE ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('froggie')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/froggie/froggie_01.webp" type="image/webp">
+            <img src="assets/images/parents/froggie/froggie_01.jpg" alt="Froggie - Dam" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p 커-8">
+            <h3 class="text-3xl font-bold text-burgundy">Froggie</h3>
+            <p class="text-gray-300 mt-2">Phantom • Female</p>
+            <p class="mt-4">13 lbs • 12" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== ARSIBALT ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('arsibalt')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/arsibalt/20251130_arsibalt_02.webp" type="image/webp">
+            <img src="assets/images/parents/arsibalt/20251130_arsibalt_01.jpg" alt="Arsibalt - Sire" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Arsibalt</h3>
+            <p class="text-gray-300 mt-2">Merle • Male</p>
+            <p class="mt-4">20 lbs • 15" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== BLUEY ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('bluey')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/bluey/bluey_01.webp" type="image/webp">
+            <img src="assets/images/parents/bluey/bluey_01.jpg" alt="Bluey - Sire" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Bluey</h3>
+            <p class="text-gray-300 mt-2">Blue Merle • Male</p>
+            <p class="mt-4">12 lbs • 11" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== BEWILDERBEAST ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('bewilderbeast')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/bewilderbeast/bewilderbeast_01.webp" type="image/webp">
+            <img src="assets/images/parents/bewilderbeast/bewilderbeast_01.jpg" alt="Bewilderbeast - Sire" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Bewilderbeast</h3>
+            <p class="text-gray-300 mt-2">Merle • Male</p>
+            <p class="mt-4">9 lbs • 10" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== LOUIE ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('louie')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/louie/louie_01.webp" type="image/webp">
+            <img src="assets/images/parents/louie/louie_01.jpg" alt="Louie - Sire" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">King Louie</h3>
+            <p class="text-gray-300 mt-2">Red • Male</p>
+            <p class="mt-4">12 lbs • 11" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== MARY PUPPINS ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('maryPuppins')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/maryPuppins/maryPuppins_01.webp" type="image/webp">
+            <img src="assets/images/parents/maryPuppins/maryPuppins_01.jpg" alt="Mary Puppins - Dam" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Mary Puppins</h3>
+            <p class="text-gray-300 mt-2">Abstract • Female</p>
+            <p class="mt-4">16 lbs • 14" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== PENNY ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('penny')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/penny/penny_01.webp" type="image/webp">
+            <img src="assets/images/parents/penny/penny_01.jpg" alt="Penny - Dam" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Penny</h3>
+            <p class="text-gray-300 mt-2">Abstract • Female</p>
+            <p class="mt-4">9 lbs • 10" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== TOOTSIE ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('tootsie')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/tootsie/tootsie_01.webp" type="image/webp">
+            <img src="assets/images/parents/tootsie/tootsie_01.jpg" alt="Tootsie - Dam" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Tootsie</h3>
+            <p class="text-gray-300 mt-2">Red • Female</p>
+            <p class="mt-4">13 lbs • 12" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== SEVRO ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('sevro')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/sevro/sevro_01.webp" type="image/webp">
+            <img src="assets/images/parents/sevro/sevro_01.jpg" alt="Sevro - Dam" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Sevro</h3>
+            <p class="text-gray-300 mt-2">Merle • Male</p>
+            <p class="mt-4">8 lbs • 9" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== RUSTY ==================== -->
+      <div class="group cursor-pointer" onclick="openLightbox('rusty')">
+        <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
+          <picture>
+            <source srcset="assets/images/parents/rusty/rusty_01.webp" type="image/webp">
+            <img src="assets/images/parents/rusty/rusty_01.jpg" alt="Sevro - Dam" class="w-full aspect-[4/5] object-cover">
+          </picture>
+          <div class="p-8">
+            <h3 class="text-3xl font-bold text-burgundy">Rusty</h3>
+            <p class="text-gray-300 mt-2">Red • Male</p>
+            <p class="mt-4">10 lbs • 10" Shoulder</p>
+            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LIGHTBOX – identical to puppies page -->
+  <div id="lightbox" class="fixed inset-0 bg-black/95 z-[100] hidden flex flex-col" onclick="closeLightbox(event)">
+    <button class="absolute top-4 right-4 text-white text-4xl z-10 hover:text-burgundy transition" 
+            onclick="document.getElementById('lightbox').classList.add('hidden')">&times;</button>
+
+    <div class="flex-1 overflow-y-auto py-20 px-4">
+      <div id="lightbox-content" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+        <!-- Images injected here -->
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Close lightbox on background click
+    function closeLightbox(e) {
+      if (e.target === document.getElementById('lightbox')) {
+        document.getElementById('lightbox').classList.add('hidden');
+        document.documentElement.style.overflow = '';
+      }
+    }
+
+    // Parent galleries
+    const galleries = 
+    {
+      froggie: {
+        folder: "assets/images/parents/froggie",
+        files: ["froggie_01.webp", "froggie_02.webp", "froggie_03.webp", "froggie_04.webp"]
+      },
+      arsibalt: {
+        folder: "assets/images/parents/arsibalt",
+        files: ["20251130_arsibalt_01.webp", "20251130_arsibalt_02.webp", "20251130_arsibalt_03.webp", "20251130_arsibalt_04.webp"]
+      },
+      bluey: {
+        folder: "assets/images/parents/bluey",
+        files: ["bluey_01.webp", "bluey_02.webp"]
+      },
+      bewilderbeast: {
+        folder: "assets/images/parents/bewilderbeast",
+        files: ["bewilderbeast_01.webp", "bewilderbeast_02.webp", "bewilderbeast_03.webp", "bewilderbeast_04.webp", "bewilderbeast_05.webp"]
+      },
+      louie: {
+        folder: "assets/images/parents/louie",
+        files: ["louie_01.webp", "louie_02.webp", "louie_03.webp", "louie_04.webp", "louie_05.webp"]
+      },
+      maryPuppins: {
+        folder: "assets/images/parents/maryPuppins",
+        files: ["maryPuppins_01.webp"]
+      },
+      penny: {
+        folder: "assets/images/parents/penny",
+        files: ["penny_01.webp", "penny_02.webp", "penny_03.webp"]
+      },
+      tootsie: {
+        folder: "assets/images/parents/tootsie",
+        files: ["tootsie_01.webp", "tootsie_02.webp", "tootsie_03.webp"]
+      },
+      sevro: {
+        folder: "assets/images/parents/sevro",
+        files: ["sevro_01.webp", "sevro_02.webp", "sevro_03.webp", "sevro_04.webp", "sevro_05.webp"]
+      },
+      rusty: {
+        folder: "assets/images/parents/rusty",
+        files: ["rusty_01.webp"]
+      }
+      // Add more dogs exactly like this
+    };
+
+    function openLightbox(dog) {
+      const gallery = galleries[dog];
+      if (!gallery) return;
+
+      const content = document.getElementById('lightbox-content');
+      content.innerHTML = gallery.files.map(file => `
+        <div class="relative overflow-hidden rounded-xl shadow-2xl cursor-zoom-in">
+          <picture>
+            <source srcset="${gallery.folder}/${file}" type="image/webp">
+            <img src="${gallery.folder}/${file.replace('.webp', '.jpg')}"
+                 class="w-full object-contain max-w-full transition-transform duration-300"
+                 loading="lazy"
+                 onclick="event.stopPropagation(); this.style.transform = this.style.transform === 'scale(2.5)' ? 'scale(1)' : 'scale(2.5)'">
+          </picture>
+        </div>
+      `).join('');
+
+      document.getElementById('lightbox').classList.remove('hidden');
+      document.documentElement.style.overflow = 'hidden';
+    }
+
+    // Close with Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        document.getElementById('lightbox').classList.add('hidden');
+        document.documentElement.style.overflow = '';
+      }
+    });
+  </script>
+</body>
+</html>

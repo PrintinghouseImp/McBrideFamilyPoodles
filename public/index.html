@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>McBride Family Poodles | Phoenix, AZ</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Our custom colors + badge killer in one block -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            burgundy: '#6B1C2D',
+            deepblack: '#0F0F0F',
+            luxurygold: '#D4AF87'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<!-- flex-col + min-h-screen makes footer stick to bottom later if we add one -->
+<body class="bg-deepblack text-white font-sans min-h-screen flex flex-col">
+
+  <!-- ==================== STICKY TOP NAVIGATION ==================== -->
+  <nav class="bg-deepblack/90 backdrop-blur sticky top-0 z-50 border-b border-burgundy/20">
+    <!-- backdrop-blur = frosted glass effect -->
+    <!-- sticky top-0 = stays fixed when you scroll -->
+    <!-- z-50 = appears above everything else -->
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <!-- Logo / site name on the left -->
+      <h1 class="text-2xl font-bold">McBride Family Poodles</h1>
+
+      <!-- Desktop menu – hidden on mobile (md:block = show only medium+ screens) -->
+      <div class="space-x-8 hidden md:block">
+        <a href="index.html"   class="hover:text-burgundy font-bold transition">Home</a>
+        <a href="puppies.html" class="hover:text-burgundy transition">Puppies</a>
+        <a href="parents.html" class="hover:text-burgundy transition">Our Dogs</a>
+        <a href="about.html"   class="hover:text-burgundy transition">About</a>
+        <a href="blog.html"    class="hover:text-burgundy transition">Blog</a>
+        <a href="contact.html" class="hover:text-burgundy transition">Contact</a>
+        <!-- transition = smooth color change on hover -->
+      </div>
+
+      <!-- Mobile menu button -->
+      <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+    </div>
+
+    <!-- Mobile dropdown – hidden by default -->
+    <div id="mobile-menu" class="hidden md:hidden bg-deepblack/95 border-t border-burgundy/30">
+      <div class="container mx-auto px-6 py-4 space-y-4 text-center">
+        <a href="index.html" class="block text-burgundy font-bold">Home</a>
+        <a href="puppies.html" class="block hover:text-burgundy">Puppies</a>
+        <a href="parents.html" class="block hover:text-burgundy">Our Dogs</a>
+        <a href="about.html" class="block hover:text-burgundy">About</a>
+        <a href="blog.html" class="block hover:text-burgundy">Blog</a>
+        <a href="contact.html" class="block hover:text-burgundy">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tiny script to make mobile menu work – put right before </body> -->
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <header class="flex-1 flex items-center justify-center bg-gradient-to-br from-deepblack via-burgundy/20 to-deepblack">
+    <!-- flex-1 = takes all remaining height so page always fills screen -->
+    <div class="text-center px-6">
+      <h1 class="text-5xl md:text-7xl font-bold mb-4">McBride Family Poodles</h1>
+      <p class="text-2xl md:text-4xl text-burgundy font-light mb-8">
+        Elite Miniature Poodles • Phoenix, Arizona
+      </p>
+      <a href="puppies.html" class="inline-block bg-burgundy hover:bg-burgundy/90 px-10 py-5 rounded text-xl font-medium transition">
+        View Available Puppies →
+      </a>
+    </div>
+  </header>
+
+  <!-- ==================== INFO BAR (3 columns) ==================== -->
+  <section class="bg-burgundy py-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-6 text-center">
+      <!-- grid-cols-1 on mobile → 3 columns on desktop (md:) -->
+      <div>
+        <h3 class="text-xl font-bold">Ralph & Janine McBride</h3>
+        <p>30+ years of breeding experience</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold">Health Tested • AKC</h3>
+        <p>OFAs, genetic panels, lifetime support</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-bold">Phoenix, Arizona</h3>
+        <p>Shipping nationwide available</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

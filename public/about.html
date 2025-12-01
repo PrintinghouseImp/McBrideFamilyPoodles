@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>McBride Family Poodles | Phoenix, AZ</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Our custom colors + badge killer in one block -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            burgundy: '#6B1C2D',
+            deepblack: '#0F0F0F',
+            luxurygold: '#D4AF87'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-deepblack text-white font-sans min-h-screen flex flex-col">
+  <!-- Paste the exact same <nav> from step 1 here -->
+
+    <nav class="bg-deepblack/90 backdrop-blur sticky top-0 z-50 border-b border-burgundy/20">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">McBride Family Poodles</h1>
+      <div class="space-x-8 hidden md:block">
+        <a href="index.html" class="hover:text-burgundy transition">Home</a>
+        <a href="puppies.html" class="text-burgundy font-bold">Puppies</a>
+        <a href="parents.html" class="text-burgundy transition">Our Dogs</a>
+        <a href="about.html" class="text-burgundy font-bold transition">About</a>
+        <a href="blog.html" class="hover:text-burgundy transition">Blog</a>
+        <a href="contact.html" class="hover:text-burgundy transition">Contact</a>
+      </div>
+
+        <button id="menu-btn" class="md:hidden text-3xl">☰</button>
+    </div>
+
+    <!-- Mobile dropdown – hidden by default -->
+    <div id="mobile-menu" class="hidden md:hidden bg-deepblack/95 border-t border-burgundy/30">
+      <div class="container mx-auto px-6 py-4 space-y-4 text-center">
+        <a href="index.html" class="block hover:text-burgundy">Home</a>
+        <a href="puppies.html" class="block hover:text-burgundy">Puppies</a>
+        <a href="parents.html" class="block hover:text-burgundy">Our Dogs</a>
+        <a href="about.html" class="block text-burgundy font-bold">About</a>
+        <a href="blog.html" class="block hover:text-burgundy">Blog</a>
+        <a href="contact.html" class="block hover:text-burgundy">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Tiny script to make mobile menu work – put right before </body> -->
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+
+   <!-- Hero -->
+  <section class="relative py-24 overflow-hidden bg-gradient-to-br from-deepblack via-burgundy/20 to-deepblack">
+    <div class="container mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-7xl font-bold mb-6">Ralph & Janine McBride</h1>
+      <p class="text-2xl text-luxurygold">Breeding Miniature Poodle Companions • Phoenix, Arizona</p>
+    </div>
+  </section>
+
+  <!-- Our Humans -->
+  <!-- Our Story – perfectly balanced, modern layout -->
+<section class="container mx-auto px-6 py-20">
+  <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto">
+    
+    <!-- Image – left side -->
+    <div class="order-1 md:order-1">
+      <img src="assets/images/humans/norman_rockwell_poodle_family.webp" 
+           alt="Ralph & Janine McNeely" 
+           class="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover">
+    </div>
+
+    <!-- Text – right side, beautifully justified & wrapped -->
+    <div class="order-2 md:order-2 text-lg leading-relaxed text-gray-200 space-y-6">
+      <h2 class="text-4xl md:text-5xl font-bold text-burgundy">Our Story</h2>
+      
+      <p class="text-justify hyphens-auto">
+        Welcome to the McBride Ranch, a boutique, family-run poodle breeding home nestled in the heart of Laveen, AZ. 
+          We began this adventure in 2022 when we realized we were absolutely crazy about poodles, and found the perfect piece of land to 
+          give them the very best life possible. Here at the McBride Ranch breeding poodles is not just a hobby - it's a lifestyle.
+          Our dogs romp across an acre of green pasture, swim in the pond our yard transforms into when we flood irrigate, and sleep on the furniture when it’s cold. 
+          Every puppy is born in our home, raised underfoot, and socialized with kids, goats, 
+          and even the occasional delivery driver or neighbor who gets recruited for puppy parties. Yes, we can schedule you in for one too!
+        <br>
+        <br>
+          Our poodle puppies are all vet-checked, microchipped, vaccinated, insured,
+          trained to use a potty pad and doggy door before they go home,
+          and every puppy leaves with a lifetime promise: no matter how many years pass, if life ever throws you a 
+          curveball and you can’t keep your poodle, our home is always open. All of our breeding dogs are genetically tested for common poodle disorders
+          and receive annual vet checkups, routine vaccinations, and dental cleanings. At the end of the day, we’re just a couple of poodle-loving folks working hard to raise happy, healthy, 
+          ridiculously spoiled companions and place them in homes that love the breed as much as we do. If you’re looking for a puppy who’s been loved like family from the moment they took their 
+          first breath – and who will be loved like family for the rest of their life – you’ve come to the right place.
+        <br>
+        <br>
+          Warmly,
+        <br>
+        <span class="text-luxurygold font-medium">McBride Family Poodles</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+  <!-- Visiting Poodle Scholars (the fun part) -->
+  <section class="bg-burgundy/10 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-5xl font-bold text-center mb-16">Visiting Scholars</h2>
+      <div class="grid md:grid-cols-3 gap-12">
+        
+        <!-- Puppy Master (your godson) -->
+        <div class="text-center">
+          <div class="mb-6 relative">
+            <img src="assets/images/humans/oleander_puppy_whisperer.jpg" alt="Puppy Whisperer" class="rounded-2xl shadow-2xl w-full aspect-[4/5] object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
+            <p class="absolute bottom-4 left-0 right-0 text-luxurygold text-xl font-bold">Puppy Whisperer</p>
+          </div>
+          <h3 class="text-2xl font-bold text-burgundy">Oleander Lawrence</h3>
+          <p class="text-gray-300 mt-2">Puppy Trainer • Last Term: Fall 2025</p>
+          <p class="mt-4 text-gray-400">Specialties: grooming, pregnancy care, puppy party coordinator</p>
+        </div>
+
+        <!-- Add more visiting scholars later the same way -->
+        
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', () => {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
