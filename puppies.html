@@ -253,6 +253,9 @@ function closeLightbox(e) {
   }
 }
 
+// Close when clicking the backdrop
+lightbox.addEventListener('click', closeLightbox);
+
 // Close with Escape
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {

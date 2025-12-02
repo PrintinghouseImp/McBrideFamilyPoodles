@@ -285,9 +285,20 @@ function openLightbox(dog) {
   document.documentElement.style.overflow = 'hidden';
 }
 
+function closeLightbox(e) {
+  // Clicked on the dark backdrop OR on a close button
+  if (e.target.id === 'lightbox' || e.target.closest('button')) {
+    lightbox.classList.add('hidden');
+    document.documentElement.style.overflow = '';   // ← restores scroll
+  }
+}
+
+// Close when clicking the backdrop
+lightbox.addEventListener('click', closeLightbox);
+
 // Close with Escape
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
+  if (e.key === 'Escape' && !lightbox.classList.contains('hidden')) {
     lightbox.classList.add('hidden');
     document.documentElement.style.overflow = '';
   }
