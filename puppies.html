@@ -223,7 +223,8 @@ const lightbox = document.getElementById('lightbox');
 const lightboxContent = document.getElementById('lightbox-content');
 
 // ALL GALLERIES 
-const galleries = {
+const galleries = 
+{
   pepper: { folder: "20250731_froggie_arsibalt", files: ["20251121_Pepper_01.webp","20251121_Pepper_02.webp","20251121_Pepper_03.webp","20251121_Pepper_04.webp","20251121_Pepper_05.webp"] },
   severus: { folder: "20250731_froggie_arsibalt", files: ["20251121_Severus_01.webp","20251121_Severus_02.webp","20251121_Severus_03.webp","20251121_Severus_04.webp"] },
   "20251124_luna": { folder: "20250731_froggie_arsibalt", files: ["20251124_luna_01.webp","20251124_luna_02.webp","20251124_luna_03.webp","20251124_luna_04.webp","20251124_luna_05.webp","20251124_luna_06.webp"] },
@@ -233,7 +234,8 @@ const galleries = {
   "20251125_sirius": { folder: "20250627_quinn_bluey", files: ["20251125_sirius_01.webp","20251125_sirius_02.webp","20251125_sirius_03.webp","20251125_sirius_04.webp","20251125_sirius_05.webp","20251125_sirius_06.webp"] }
 };
 
-function openLightbox(puppy) {
+function openLightbox(puppy) 
+{
   const gallery = galleries[puppy];
   if (!gallery) return;
 
