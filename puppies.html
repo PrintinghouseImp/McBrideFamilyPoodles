@@ -73,8 +73,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12">
 
       <!-- PEPPER -->
-      <div class="group cursor-pointer" onclick="openLightbox('pepper')">
-        
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250731_froggie_arsibalt/20251121_Pepper_01.webp" type="image/webp">
@@ -85,15 +84,21 @@
             <p class="text-gray-300 mt-2">Blue Merle • Female • Born July 31, 2025</p>
             <p class="mt-4">Sire: Arsibalt • Dam: Froggie</p>
             <p class="text-2xl font-bold mt-6">$1200</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
-          </div>
-          <div class="view-counter" data-puppy="pepper">Pepper's gallery has been viewed <span>0</span> times 🐾
+            <!-- opens gallery of photos-->
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="pepper">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+              Pepper's gallery has been viewed <strong><span class="view-count" data-puppy="pepper">0</span></strong> times
+            </p>
           </div>
         </div>
       </div>
 
       <!-- SEVERUS -->
-      <div class="group cursor-pointer" onclick="openLightbox('severus')">
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250731_froggie_arsibalt/20251121_Severus_01.webp" type="image/webp">
@@ -104,13 +109,20 @@
             <p class="text-gray-300 mt-2">Blue Merle • Male • Born July 31, 2025</p>
             <p class="mt-4">Sire: Arsibalt • Dam: Froggie</p>
             <p class="text-2xl font-bold mt-6">$2000</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="severus">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+             Severus' gallery has been viewed  <strong><span class="view-count" data-puppy="severus">0</span></strong> times
+            </p>
           </div>
         </div>
       </div>
 
       <!-- LUNA -->
-      <div class="group cursor-pointer" onclick="openLightbox('20251124_luna')">
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250731_froggie_arsibalt/20251124_luna_01.webp" type="image/webp">
@@ -121,13 +133,20 @@
             <p class="text-gray-300 mt-2">Apricot • Female • Born July 31, 2025</p>
             <p class="mt-4">Sire: Arsibalt • Dam: Froggie</p>
             <p class="text-2xl font-bold mt-6">Available for Guardianship</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="20251124_luna">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+              Luna's gallery has been viewed  <strong><span class="view-count" data-puppy="20251124_luna">0</span></strong> times
+            </p>
           </div>
         </div>
       </div>
 
       <!-- JUNEBUG -->
-      <div class="group cursor-pointer" onclick="openLightbox('20251124_junebug')">
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250731_froggie_arsibalt/20251124_junebug_01.webp" type="image/webp">
@@ -138,13 +157,20 @@
             <p class="text-gray-300 mt-2">Blue Merle • Female • Born July 31, 2025</p>
             <p class="mt-4">Sire: Arsibalt • Dam: Froggie</p>
             <p class="text-2xl font-bold mt-6">$1500</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="20251124_junebug">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+              Junebug's gallery has been viewed  <strong><span class="view-count" data-puppy="20251124_junebug">0</span></strong> times
+            </p>
           </div>
         </div>
       </div>
 
       <!-- BOWIE -->
-      <div class="group cursor-pointer" onclick="openLightbox('20251125_bowie')">
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250731_froggie_arsibalt/20251125_bowie_01.webp" type="image/webp">
@@ -155,14 +181,21 @@
             <p class="text-gray-300 mt-2">Blue Merle • Male • Born July 31, 2025</p>
             <p class="mt-4">Sire: Arsibalt • Dam: Froggie</p>
             <p class="text-2xl font-bold mt-6">$2000</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="20251125_bowie">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+              Bowie's gallery has been viewed  <strong><span class="view-count" data-puppy="20251125_bowie">0</span></strong> times
+            </p>
           </div>
         </div>
       </div>
 
       
     <!-- SIRIUS -->
-      <div class="group cursor-pointer" onclick="openLightbox('20251125_sirius')">
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250627_quinn_bluey/20251125_sirius_01.webp" type="image/webp">
@@ -173,13 +206,19 @@
             <p class="text-gray-300 mt-2">Black Abstact • Male • Born June 27, 2025</p>
             <p class="mt-4">Sire: Bluey • Dam: Quinn</p>
             <p class="text-2xl font-bold mt-6">$1000</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
-          </div>
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="20251125_sirius">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+              Sirius's gallery has been viewed  <strong><span class="view-count" data-puppy="20251125_sirius">0</span></strong> times
+            </p>
         </div>
       </div>
 
       <!-- MERLIN -->
-      <div class="group cursor-pointer" onclick="openLightbox('20251124_merlin')">
+      <div class="group">
         <div class="bg-gray-900 rounded-2xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-[1.02] group-hover:shadow-burgundy/20">
           <picture>
             <source srcset="assets/images/puppies/20250627_quinn_bluey/20251124_merlin_01.webp" type="image/webp">
@@ -190,7 +229,14 @@
             <p class="text-gray-300 mt-2">Blue Merle • Male • Born June 27, 2025</p>
             <p class="mt-4">Sire: Bluey • Dam: Quinn</p>
             <p class="text-2xl font-bold mt-6">$1200</p>
-            <button class="mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition">View Gallery →</button>
+            <button class="gallery-btn mt-6 w-full bg-burgundy hover:bg-burgundy/90 py-4 rounded-lg transition"
+                    data-puppy="20251124_merlin">
+              View Gallery →
+            </button>
+            <!-- Live view counter for gallery (updates only once per visitor) -->
+            <p class="text-gray-400 text-sm mt-4">
+              Merlin's gallery has been viewed  <strong><span class="view-count" data-puppy="20251124_merlin">0</span></strong> times
+            </p>
           </div>
         </div>
       </div>
@@ -266,34 +312,26 @@ document.addEventListener('keydown', e => {
     document.documentElement.style.overflow = '';
   }
 });
-</script>
 
-<script>
-// Tiny view counter that works on plain HTML sites
-document.querySelectorAll('.view-counter').forEach(counter => {
-  const puppy = counter.getAttribute('data-puppy');
-  const span = counter.querySelector('span');
-  
-  // Load saved count (or start at 0)
-  let views = parseInt(localStorage.getItem('views_' + puppy) || '0');
-  
-  // Increase by 1 the first time the page loads
-  views += 1;
-  span.textContent = views;
-  
-  // Save it so it remembers forever
-  localStorage.setItem('views_' + puppy, views);
+/* BUTTON-ONLY + ONE VIEW PER VISITOR COUNTER */
+document.querySelectorAll('.gallery-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const puppy = this.getAttribute('data-puppy');
+
+    openLightbox(puppy);
+
+    // Increase counter only once per visitor (per browser session)
+    if (!sessionStorage.getItem('viewed_' + puppy)) {
+      let count = parseInt(localStorage.getItem('views_' + puppy) || '0') + 1;
+      const span = document.querySelector(`.view-count[data-puppy="${puppy}"]`);
+      if (span) span.textContent = count;
+      localStorage.setItem('views_' + puppy, count);
+      sessionStorage.setItem('viewed_' + puppy, 'true');
+    }
+  });
 });
 </script>
 
-<style>
-.view-counter { 
-  text-align: center; 
-  margin: 15px 0; 
-  font-weight: 600; 
-  color: #8b1e3f; 
-  font-size: 18px; 
-}
 </style>
 </body>
 </html>
